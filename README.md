@@ -10,7 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 To run this project, you will need a web browser installed on your machine.
 
 ## Installing
-1. Clone the repository: git clone 'https://github.com/<username>/drum-kit.git'
+1. Clone the repository: git clone `https://github.com/<username>/drum-kit.git`
 2. Open index.html in your web browser.
 3. Start playing the drums!
 
