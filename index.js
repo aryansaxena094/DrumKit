@@ -38,6 +38,10 @@ for(let i = 0; i < all; i++){
             var audio = new Audio("sounds/crash.mp3");
             audio.play();
             break;
+            
+            default:
+            alert("This button is not specified yet!");
+            break;
         }
     });
 }
