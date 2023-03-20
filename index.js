@@ -1,4 +1,4 @@
-// detecting length
+// Getting length
 var all = document.querySelectorAll(".drum").length;
 
 //Detecting Mouse press
@@ -6,12 +6,14 @@ for(let i = 0; i < all; i++){
     document.querySelectorAll(".drum")[i].addEventListener("click", function(){
         var button = this.innerHTML;
         makeSound(button);
+        animation(button);
     });
 }
 
 //Detecting Keyboard Press
 document.addEventListener("keypress",function(event){
     makeSound(event.key);
+    animation(event.key);
 })
 
 //Function to make sound
@@ -56,4 +58,12 @@ function makeSound(button){
         alert("This button is not specified yet!");
         break;
     }
+}
+
+function animation(button){
+    var active = document.querySelector("." + button);
+    active.classList.add("pressed");
+    setTimeout(function(){
+        active.classList.remove("pressed");
+    }, 50)
 }
